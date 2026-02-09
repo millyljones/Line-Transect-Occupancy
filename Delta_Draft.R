@@ -1,4 +1,4 @@
-# Compute metric for each data set
+# Compute metric for a given data set
 
 Delta_metric <- function(J, data, sites){
   # J (integer): is the number of replicate segment level observations
@@ -26,7 +26,7 @@ Delta_metric <- function(J, data, sites){
   }
 
   occ.sites <- which(obs_occ == 1)
-  data.obs <- data[sites %in% occ.sites,,1:J, drop=F] # just get the occupied zones
+  data.obs <- data[sites %in% occ.sites,,1:J, drop=F] # just get the occupied sites
 
   nsegs <- dim(data.obs)[2]
 
