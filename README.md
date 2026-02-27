@@ -8,4 +8,4 @@ There are XXX files in this repository.
 
 # Files
 
-Go through each of the files and explain what they do:
+XXX.
