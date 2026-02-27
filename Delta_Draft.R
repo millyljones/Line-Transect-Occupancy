@@ -3,8 +3,8 @@
 Delta_metric <- function(J, data, sites){
   # J (integer): is the number of replicate segment level observations
   # data: a matrix (e.g. if J=1) or an array
-    # If a matrix: nrow(data) = number of sites and ncol(data) = number of segments
-    # If an array: dim(data)= number of sites, number of segments, number of replicate segment-level observations
+    # If a matrix: nrow(data) = number of transects and ncol(data) = number of segments
+    # If an array: dim(data)= number of transects, number of segments, number of replicate segment-level observations
     # data can be passed as an array when J=1 if dim(data)[3] = 1
     # Entries are 0,1 entries denoting detection/non-detection
   # sites: a vector of integers where i-th entry denotes in which site transect i is located
